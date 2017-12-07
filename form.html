@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="css/normalise.css">
+  	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="top-header">
+        <div class="top-header__logo">
+          <a href="index.html"></a>
+        </div>
+        <nav class="main-nav main-nav--open">
+          <button class="main-nav__toggle"></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            </ul>
+          <div class="main-nav__options">
+              <ul class="main-nav__options-wrapper">
+                <li class="main-nav__search"><a href="#">Поиск по сайту</a></li>
+                <li class="main-nav__crate"><a href="#">Корзина: пока пуста</a></li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="header-mishka">
+        <div class="header-mishka__wrapper header-mishka__wrapper--img">
+          <ul class="header-mishka__list">
+            <li class="header-mishka__item"><a href="#">Новые поступления</a></li>
+            <li class="header-mishka__item"><a href="#">Распродажа</a></li>
+          </ul>
+          <p class="header-mishka__addition">Бесплатная доставка по России</p>
+          <h1 class="header-mishka__title header-mishka__title-catalog">Вязание на заказ</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main-form">
+      <div class="main-form__wrapper">
+        <p class="main-form__description">Мы будем рады воплотить в жизнь ваши пожелания!<br/> Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="main-radio">
+          <span class="main-radio__title">тип</span>
+          <div class="main-radio__wrapper">
+            <form class="main-radio__form" action="#" method="get">
+              <input type="radio" name="type" id="accessories"><label for="accessories">Аксессуар для интерьера</label>
+              <input type="radio" name="type" id="toy"><label for="toy">Детская игрушка</label>
+            </form>
+          </div>
+        </div>
+        <div class="main-checkbox">
+          <span class="main-checkbox__title">цвет</span>
+          <div class="main-checkbox__wrapper">
+            <form class="main-checkbox__form" action="#" method="get">
+              <input type="checkbox" name="white" id="white"><label for="white">Белый</label>
+              <input type="checkbox" name="grey" id="grey"><label for="grey">Серый</label>
+              <input type="checkbox" name="tiffany" id="tiffany"><label for="tiffany">"Тиффани"</label>
+              <input type="checkbox" name="black" id="black"><label for="black">Чёрный</label>
+              <input type="checkbox" name="pink" id="pink"><label for="pink">Розовый</label>
+              <input type="checkbox" name="orange" id="orange"><label for="orange">Оранжевый</label>
+            </form>
+          </div>
+        </div>
+        <div class="main-name">
+          <form class="main-name__form" action="#" method="post">
+            <div class="main-name__wrapper">
+              <span class="main-name__title">фио</span>
+              <label>Фамилия:<input type="name" name="name" placeholder="Укажите Фамилию"></label>
+              <label>Имя:<input type="name" name="name" placeholder="Укажите Имя"></label>
+              <label>Отчество:<input type="name" name="name" placeholder="Укажите Отчество"></label>
+            </div>
+            <div class="main-name__wrapper2">
+              <span class="main-name__phone">тел</span>
+              <input type="number" name="phone" placeholder="+3 XXX XX XX">
+              <span class="main-name__mail">e-mail</span>
+              <input type="mail" name="mail" placeholder="Ваш e-mail">
+            </div>
+            <div class="main-name__add">
+              <span class="main-name__title">доп</span>
+              <textarea cols="10" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="main-button">
+          <button class="main-button__btn" type="submit">отправить заказ</button>
+          <span class="main-button__description">Все поля являются обязательными<span>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+  		<div class="page-footer__wrapper">
+  			<a href="#" class="page-footer__logo">
+  				<img src="image/logo/logo-footer.png" alt="mishka">
+  			</a>
+  			<div class="page-footer__social">
+  				<ul class="social">
+  					<li class="social__item"><a class="social__link social__link--in" href="#">IN</a></li>
+  					<li class="social__item"><a class="social__link social__link--fb" href="#">FB</a></li>
+  					<li class="social__item"><a class="social__link social__link--tw" href="#">TW</a></li>
+  				</ul>
+  			</div>
+  			<div class="page-footer__copyright">Сделано Maxim Durnenko</div>
+  		</div>
+  	</footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
